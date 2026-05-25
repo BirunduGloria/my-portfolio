@@ -1,10 +1,27 @@
 import profilePic from "./assets/profilepic.jpeg"
+
 import {
   FaGithub,
   FaLinkedin,
   FaEnvelope,
   FaInstagram,
+  FaReact,
+  FaHtml5,
+  FaCss3Alt,
+  FaGitAlt,
 } from "react-icons/fa6"
+
+import {
+  SiJavascript,
+  SiTailwindcss,
+  SiDotnet,
+  SiPostgresql,
+  SiPostman,
+  SiNodedotjs,
+  SiNextdotjs,
+} from "react-icons/si"
+
+import { VscVscode } from "react-icons/vsc"
 
 function App() {
   return (
@@ -27,18 +44,6 @@ function App() {
 
           <li>
             <a href="#" className="hover:text-orange-400">
-              About
-            </a>
-          </li>
-
-          <li>
-            <a href="#" className="hover:text-orange-400">
-              Projects
-            </a>
-          </li>
-
-          <li>
-            <a href="#" className="hover:text-orange-400">
               Contact
             </a>
           </li>
@@ -50,27 +55,29 @@ function App() {
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center text-center mt-20 px-5">
 
-       <div className="relative mt-6">
-  
-  {/* Blur background layer */}
-  <div className="absolute inset-0 bg-orange-400 blur-2xl opacity-30 rounded-xl"></div>
+        {/* Profile Image */}
+        <div className="relative mt-6">
 
-  {/* Image */}
-  <img
-    src={profilePic}
-    alt="Profile"
-    className="w-48 h-56 object-cover rounded-xl shadow-lg hover:scale-105 transition duration-300"
-  />
+          {/* Blur Background */}
+          <div className="absolute inset-0 bg-orange-400 blur-2xl opacity-30 rounded-xl"></div>
 
-</div>  
+          {/* Actual Image */}
+          <img
+            src={profilePic}
+            alt="Profile"
+            className="w-48 h-56 object-cover rounded-xl shadow-lg hover:scale-105 transition duration-300 relative"
+          />
 
+        </div>
+
+        {/* Hero Text */}
         <h1 className="text-5xl font-bold mt-8">
           Hello, I'm Gloria Birundu.
         </h1>
 
-         <p className="text-xl font-bold text-gray-300 mt-5">
+        <p className="text-xl font-bold text-gray-300 mt-5">
           Full Stack Developer
-         </p>
+        </p>
 
         <p className="text-lg text-gray-400 mt-4 max-w-3xl">
           I craft modern, responsive and scalable web applications,
@@ -81,48 +88,170 @@ function App() {
 
         {/* Button */}
         <button className="mt-8 bg-orange-400 hover:bg-orange-500 text-white px-6 py-3 rounded-lg transition duration-300 hover:scale-105">
-
           View My Projects
-
         </button>
 
         {/* Social Links */}
         <div className="flex gap-6 mt-8 text-3xl">
 
-  <a
-    href="https://github.com/BirunduGloria"
-    target="_blank"
-    className="hover:text-orange-400 transition duration-300"
-  >
-    <FaGithub />
-  </a>
+          <a
+            href="https://github.com/BirunduGloria"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-orange-400 transition duration-300"
+          >
+            <FaGithub />
+          </a>
 
-  <a
-    href="https://linkedin.com/in/Gloria_Birundu"
-    target="_blank"
-    className="hover:text-orange-400 transition duration-300"
-  >
-    <FaLinkedin />
-  </a>
+          <a
+            href="https://linkedin.com/in/Gloria_Birundu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-orange-400 transition duration-300"
+          >
+            <FaLinkedin />
+          </a>
 
-  <a
-    href="https://instagram.com/Birundu.g"
-    target="_blank"
-    className="hover:text-orange-400 transition duration-300"
-  >
-    <FaInstagram />
-  </a>
+          <a
+            href="https://instagram.com/Birundu.g"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-orange-400 transition duration-300"
+          >
+            <FaInstagram />
+          </a>
 
-  <a
-    href="mailto:birundugloria@gmail.com"
-    className="hover:text-orange-400 transition duration-300"
-  >
-    <FaEnvelope />
-  </a>
+          <a
+            href="mailto:birundugloria@gmail.com"
+            className="hover:text-orange-400 transition duration-300"
+          >
+            <FaEnvelope />
+          </a>
 
         </div>
 
       </div>
+
+      {/* About Section */}
+      <section
+        id="about"
+        className="max-w-6xl mx-auto px-6 py-24"
+      >
+
+        <h2 className="text-4xl font-bold text-center text-orange-400 mb-12">
+          About Me
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+
+          {/* Left Side */}
+          <div>
+
+            <p className="text-gray-400 leading-8 text-lg">
+              I am a passionate Full Stack Developer with expertise in building scalable,
+              high-performance web applications.I speciaalize in React, Next.js, and 
+              modern web technologies.
+            </p>
+
+            <p className="text-gray-400 leading-8 mt-6 text-lg">
+              My journey in web development started with curiosity about how
+              things work on the internet.Today, I craft clean,efficient code 
+              and enjoy transforming ideas into functional digital products,
+              solving real-world problems, and creating
+              seamless user experiences.
+            </p>
+
+           <p className="text-gray-400 leading-8 mt-6 text-lg">
+            I believe in writing code that's not just functional,
+            but also maintainable,scalable, and a joy to work with.
+            </p>
+          </div>
+
+          {/* Right Side */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+
+            <div className="bg-gray-900 p-6 rounded-xl text-center hover:scale-105 transition duration-300">
+              <FaReact className="text-5xl text-cyan-400 mx-auto mb-4" />
+              <h4 className="text-orange-400 font-semibold">React</h4>
+            </div>
+
+            <div className="bg-gray-900 p-6 rounded-xl text-center hover:scale-105 transition duration-300">
+              <SiJavascript className="text-5xl text-yellow-400 mx-auto mb-4" />
+              <h4 className="text-orange-400 font-semibold">JavaScript</h4>
+            </div>
+
+            <div className="bg-gray-900 p-6 rounded-xl text-center hover:scale-105 transition duration-300">
+              <SiTailwindcss className="text-5xl text-cyan-300 mx-auto mb-4" />
+              <h4 className="text-orange-400 font-semibold">Tailwind CSS</h4>
+            </div>
+
+            <div className="bg-gray-900 p-6 rounded-xl text-center hover:scale-105 transition duration-300">
+              <FaHtml5 className="text-5xl text-orange-500 mx-auto mb-4" />
+              <h4 className="text-orange-400 font-semibold">HTML</h4>
+            </div>
+
+            <div className="bg-gray-900 p-6 rounded-xl text-center hover:scale-105 transition duration-300">
+              <FaCss3Alt className="text-5xl text-blue-400 mx-auto mb-4" />
+              <h4 className="text-orange-400 font-semibold">CSS</h4>
+            </div>
+
+            <div className="bg-gray-900 p-6 rounded-xl text-center hover:scale-105 transition duration-300">
+              <SiDotnet className="text-5xl text-purple-400 mx-auto mb-4" />
+              <h4 className="text-orange-400 font-semibold">.NET / C#</h4>
+            </div>
+
+            <div className="bg-gray-900 p-6 rounded-xl text-center hover:scale-105 transition duration-300">
+              <SiPostgresql className="text-5xl text-blue-300 mx-auto mb-4" />
+              <h4 className="text-orange-400 font-semibold">PostgreSQL</h4>
+            </div>
+
+            <div className="bg-gray-900 p-6 rounded-xl text-center hover:scale-105 transition duration-300">
+              <FaGitAlt className="text-5xl text-orange-500 mx-auto mb-4" />
+              <h4 className="text-orange-400 font-semibold">Git</h4>
+            </div>
+
+            <div className="bg-gray-900 p-6 rounded-xl text-center hover:scale-105 transition duration-300">
+              <FaGithub className="text-5xl text-white mx-auto mb-4" />
+              <h4 className="text-orange-400 font-semibold">GitHub</h4>
+            </div>
+
+            <div className="bg-gray-900 p-6 rounded-xl text-center hover:scale-105 transition duration-300">
+              <SiPostman className="text-5xl text-orange-400 mx-auto mb-4" />
+              <h4 className="text-orange-400 font-semibold">Postman</h4>
+            </div>
+
+            <div className="bg-gray-900 p-6 rounded-xl text-center hover:scale-105 transition duration-300">
+              <VscVscode className="text-5xl text-blue-400 mx-auto mb-4" />
+              <h4 className="text-orange-400 font-semibold">VS Code</h4>
+            </div>
+
+          <div className="bg-gray-900 p-6 rounded-xl text-center hover:scale-105 transition duration-300">
+              <SiNodedotjs className="text-5xl text-blue-400 mx-auto mb-4" />
+              <h4 className="text-orange-400 font-semibold">Node.js</h4>
+            </div>
+
+            <div className="bg-gray-900 p-6 rounded-xl text-center hover:scale-105 transition duration-300">
+              <SiNextdotjs className="text-5xl text-blue-400 mx-auto mb-4" />
+              <h4 className="text-orange-400 font-semibold">Next.js</h4>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* Resume Button */}
+      <section className="flex justify-center pb-20">
+
+        <a
+          href="/resume.pdf"
+          download
+          className="bg-orange-400 hover:bg-orange-500 text-white px-8 py-4 rounded-xl transition duration-300 hover:scale-105 inline-block"
+        >
+          My Resume
+        </a>
+
+      </section>
 
     </div>
   )
