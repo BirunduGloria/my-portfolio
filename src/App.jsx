@@ -7,7 +7,6 @@ import {
   FaInstagram,
   FaReact,
   FaHtml5,
-  FaCss3Alt,
   FaGitAlt,
 } from "react-icons/fa6"
 
@@ -52,120 +51,159 @@ function App() {
 
       </nav>
 
-      {/* Hero Section */}
-      <div className="flex flex-col items-center justify-center text-center mt-20 px-5">
+  {/* Hero Section */}
+<div className="flex flex-col-reverse md:flex-row items-center justify-between max-w-6xl mx-auto mt-20 px-5 gap-16">
 
-        {/* Profile Image */}
-        <div className="relative mt-6">
+  {/* LEFT SIDE */}
+  <div className="flex-1 text-center md:text-left">
 
-          {/* Blur Background */}
-          <div className="absolute inset-0 bg-orange-400 blur-2xl opacity-30 rounded-xl"></div>
+    <h1 className="text-5xl font-bold leading-tight">
+      Hello, I'm Gloria Birundu.
+    </h1>
 
-          {/* Actual Image */}
-          <img
-            src={profilePic}
-            alt="Profile"
-            className="w-48 h-56 object-cover rounded-xl shadow-lg hover:scale-105 transition duration-300 relative"
-          />
+    <p className="text-xl font-bold text-gray-300 mt-5">
+      Full Stack Developer
+    </p>
 
-        </div>
+    <p className="text-lg text-gray-400 mt-4 max-w-2xl">
+      I craft modern, responsive and scalable web applications,
+      with a passion for clean code and user-centric design.
+      I create seamless digital experiences that drive results
+      and bring ideas to life on the web.
+    </p>
 
-        {/* Hero Text */}
-        <h1 className="text-5xl font-bold mt-8">
-          Hello, I'm Gloria Birundu.
-        </h1>
+    {/* Button */}
+    <button className="mt-8 bg-orange-400 hover:bg-orange-500 text-white px-6 py-3 rounded-lg transition duration-300 hover:scale-105">
+      View My Projects
+    </button>
 
-        <p className="text-xl font-bold text-gray-300 mt-5">
-          Full Stack Developer
-        </p>
+    {/* Social Links */}
+    <div className="flex gap-6 mt-8 text-3xl justify-center md:justify-start">
 
-        <p className="text-lg text-gray-400 mt-4 max-w-3xl">
-          I craft modern, responsive and scalable web applications,
-          with a passion for clean code and user-centric design.
-          I create seamless digital experiences that drive results
-          and bring ideas to life on the web.
-        </p>
+      <a
+        href="https://github.com/BirunduGloria"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-orange-400 transition duration-300"
+      >
+        <FaGithub />
+      </a>
 
-        {/* Button */}
-        <button className="mt-8 bg-orange-400 hover:bg-orange-500 text-white px-6 py-3 rounded-lg transition duration-300 hover:scale-105">
-          View My Projects
-        </button>
+      <a
+        href="https://linkedin.com/in/Gloria_Birundu"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-orange-400 transition duration-300"
+      >
+        <FaLinkedin />
+      </a>
 
-        {/* Social Links */}
-        <div className="flex gap-6 mt-8 text-3xl">
+      <a
+        href="https://instagram.com/Birundu.g"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-orange-400 transition duration-300"
+      >
+        <FaInstagram />
+      </a>
 
-          <a
-            href="https://github.com/BirunduGloria"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-orange-400 transition duration-300"
-          >
-            <FaGithub />
-          </a>
+      <a
+        href="mailto:birundugloria@gmail.com"
+        className="hover:text-orange-400 transition duration-300"
+      >
+        <FaEnvelope />
+      </a>
 
-          <a
-            href="https://linkedin.com/in/Gloria_Birundu"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-orange-400 transition duration-300"
-          >
-            <FaLinkedin />
-          </a>
+    </div>
 
-          <a
-            href="https://instagram.com/Birundu.g"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-orange-400 transition duration-300"
-          >
-            <FaInstagram />
-          </a>
+  </div>
 
-          <a
-            href="mailto:birundugloria@gmail.com"
-            className="hover:text-orange-400 transition duration-300"
-          >
-            <FaEnvelope />
-          </a>
+  {/* RIGHT SIDE */}
+  <div className="flex-1 flex justify-center">
 
-        </div>
+    <div className="relative">
 
-      </div>
+      {/* Blur Background */}
+      <div className="absolute inset-0 bg-orange-400 blur-2xl opacity-30 rounded-xl"></div>
+
+      {/* Image */}
+      <img
+        src={profilePic}
+        alt="Profile"
+        className="w-64 h-72 object-cover rounded-xl shadow-lg hover:scale-105 transition duration-300 relative"
+      />
+
+    </div>
+
+  </div>
+
+</div>
 
       {/* About Section */}
-      <section
-        id="about"
-        className="max-w-6xl mx-auto px-6 py-24"
-      >
+<section
+  id="about"
+  className="max-w-7xl mx-auto px-6 py-24"
+>
 
-        <h2 className="text-4xl font-bold text-center text-orange-400 mb-12">
-          About Me
-        </h2>
+  {/* Heading */}
+  <div className="text-center mb-16">
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+    <h2 className="text-5xl font-bold">
+      About <span className="text-orange-400">Me</span>
+    </h2>
 
-          {/* Left Side */}
-          <div>
+    <p className="text-gray-400 mt-4">
+      Crafting digital experiences with passion and precision.
+    </p>
 
-            <p className="text-gray-400 leading-8 text-lg">
-              I am a passionate Full Stack Developer with expertise in building scalable,
-              high-performance web applications.I speciaalize in React, Next.js, and 
-              modern web technologies.
-            </p>
+  </div>
 
-            <p className="text-gray-400 leading-8 mt-6 text-lg">
-              My journey in web development started with curiosity about how
-              things work on the internet.Today, I craft clean,efficient code 
-              and enjoy transforming ideas into functional digital products,
-              solving real-world problems, and creating
-              seamless user experiences.
-            </p>
+  {/* Main Content */}
+  <div className="grid lg:grid-cols-2 gap-16 items-start">
 
-           <p className="text-gray-400 leading-8 mt-6 text-lg">
-            I believe in writing code that's not just functional,
-            but also maintainable,scalable, and a joy to work with.
-            </p>
-          </div>
+    {/* LEFT SIDE */}
+    <div>
+
+      <h3 className="text-3xl font-semibold mb-6 leading-snug">
+        Full Stack Developer focused on modern and scalable web applications.
+      </h3>
+
+      <p className="text-gray-400 leading-8 text-lg">
+        I am a passionate{" "}
+        <span className="text-orange-400">
+          Full Stack Developer
+        </span>{" "}
+        with expertise in building scalable, high-performance
+        web applications using modern technologies like React,
+        Next.js, .NET, and PostgreSQL.
+      </p>
+
+      <p className="text-gray-400 leading-8 text-lg mt-6">
+        My journey into web development started from curiosity
+        about how things work on the internet. Today,
+        I enjoy transforming ideas into functional digital
+        products, solving real-world problems,
+        and creating intuitive user experiences.
+      </p>
+
+      <p className="text-gray-400 leading-8 text-lg mt-6">
+        I believe in writing code that is not only functional,
+        but also maintainable, scalable, and clean.
+      </p>
+
+{/* Resume Button */}
+      <section className="flex justify-center pb-20">
+
+        <a
+          href="/resume.pdf"
+          download
+          className="bg-orange-400 hover:bg-orange-500 text-white px-8 py-4 rounded-xl transition duration-300 hover:scale-105 inline-block"
+        >
+          My Resume
+        </a>
+
+      </section>
+    </div>
 
           {/* Right Side */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
@@ -188,11 +226,6 @@ function App() {
             <div className="bg-gray-900 p-6 rounded-xl text-center hover:scale-105 transition duration-300">
               <FaHtml5 className="text-5xl text-orange-500 mx-auto mb-4" />
               <h4 className="text-orange-400 font-semibold">HTML</h4>
-            </div>
-
-            <div className="bg-gray-900 p-6 rounded-xl text-center hover:scale-105 transition duration-300">
-              <FaCss3Alt className="text-5xl text-blue-400 mx-auto mb-4" />
-              <h4 className="text-orange-400 font-semibold">CSS</h4>
             </div>
 
             <div className="bg-gray-900 p-6 rounded-xl text-center hover:scale-105 transition duration-300">
@@ -237,19 +270,6 @@ function App() {
           </div>
 
         </div>
-
-      </section>
-
-      {/* Resume Button */}
-      <section className="flex justify-center pb-20">
-
-        <a
-          href="/resume.pdf"
-          download
-          className="bg-orange-400 hover:bg-orange-500 text-white px-8 py-4 rounded-xl transition duration-300 hover:scale-105 inline-block"
-        >
-          My Resume
-        </a>
 
       </section>
 
