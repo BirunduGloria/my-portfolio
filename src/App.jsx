@@ -273,7 +273,142 @@ function App() {
 
       </section>
 
+    
+    {/* ServicesSection */}
+    <section
+  id="services"
+  className="max-w-7xl mx-auto px-6 py-24"
+>
+
+  {/* Heading */}
+  <div className="text-center mb-16">
+
+    <h2 className="text-5xl font-bold">
+      What <span className="text-orange-400">I Do</span>
+    </h2>
+
+    <p className="text-gray-400 mt-4">
+      I build modern, scalable, and user-focused digital solutions.
+    </p>
+
+  </div>
+
+  {/* Services Grid */}
+  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    {/* Frontend */}
+    <div className="bg-gray-900 p-8 rounded-2xl hover:scale-105 transition duration-300 border border-gray-800">
+
+      <div className="text-5xl mb-5">
+        💻
+      </div>
+
+      <h3 className="text-2xl font-semibold mb-4">
+        Frontend Development
+      </h3>
+
+      <p className="text-gray-400 leading-7">
+        Building responsive and interactive user interfaces
+        using React, Next.js, Tailwind CSS, HTML, and JavaScript.
+      </p>
+
     </div>
+
+    {/* Backend */}
+    <div className="bg-gray-900 p-8 rounded-2xl hover:scale-105 transition duration-300 border border-gray-800">
+
+      <div className="text-5xl mb-5">
+        ⚙️
+      </div>
+
+      <h3 className="text-2xl font-semibold mb-4">
+        Backend Development
+      </h3>
+
+      <p className="text-gray-400 leading-7">
+        Developing secure and scalable backend systems
+        using C#, .NET, ASP.NET Core, REST APIs, and Node.js.
+      </p>
+
+    </div>
+
+    {/* Database */}
+    <div className="bg-gray-900 p-8 rounded-2xl hover:scale-105 transition duration-300 border border-gray-800">
+
+      <div className="text-5xl mb-5">
+        🗄️
+      </div>
+
+      <h3 className="text-2xl font-semibold mb-4">
+        Database Design
+      </h3>
+
+      <p className="text-gray-400 leading-7">
+        Designing and managing efficient databases using
+        PostgreSQL, Entity Framework Core, and JSON Server.
+      </p>
+
+    </div>
+
+    {/* API */}
+    <div className="bg-gray-900 p-8 rounded-2xl hover:scale-105 transition duration-300 border border-gray-800">
+
+      <div className="text-5xl mb-5">
+        🔗
+      </div>
+
+      <h3 className="text-2xl font-semibold mb-4">
+        API Development
+      </h3>
+
+      <p className="text-gray-400 leading-7">
+        Creating RESTful APIs and integrating third-party services
+        for seamless communication between systems.
+      </p>
+
+    </div>
+
+    {/* UI/UX */}
+    <div className="bg-gray-900 p-8 rounded-2xl hover:scale-105 transition duration-300 border border-gray-800">
+
+      <div className="text-5xl mb-5">
+        🎨
+      </div>
+
+      <h3 className="text-2xl font-semibold mb-4">
+        UI / UX Design
+      </h3>
+
+      <p className="text-gray-400 leading-7">
+        Designing clean, modern, and intuitive user experiences
+        focused on usability and accessibility.
+      </p>
+
+    </div>
+
+    {/* Optimization */}
+    <div className="bg-gray-900 p-8 rounded-2xl hover:scale-105 transition duration-300 border border-gray-800">
+
+      <div className="text-5xl mb-5">
+        🚀
+      </div>
+
+      <h3 className="text-2xl font-semibold mb-4">
+        Performance Optimization
+      </h3>
+
+      <p className="text-gray-400 leading-7">
+        Improving website speed, responsiveness, scalability,
+        and overall application performance.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+ </div>
   )
 }
 
