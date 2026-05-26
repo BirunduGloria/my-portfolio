@@ -406,6 +406,15 @@ function App() {
 
   </div>
 
+    {/* Projects Button */}
+<div className="flex justify-center mt-16">
+
+  <button className="bg-orange-400 hover:bg-orange-500 text-white px-8 py-4 rounded-xl transition duration-300 hover:scale-105">
+    View My Projects
+  </button>
+
+</div>
+
 </section>
 
 {/* Footer */}
