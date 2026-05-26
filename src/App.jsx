@@ -439,16 +439,119 @@ function App() {
 {/* Contact Section */}
 <section
   id="contact"
-  className="max-w-6xl mx-auto px-6 py-24"
+  className="max-w-7xl mx-auto px-6 py-24"
 >
 
-  <h2 className="text-5xl font-bold text-center">
-    Let's <span className="text-orange-400">Talk</span>
-  </h2>
+  {/* Heading */}
+  <div className="text-center mb-16">
 
-  <p className="text-gray-400 text-center mt-4">
-    Have a project in mind or want to collaborate?
-  </p>
+    <h2 className="text-5xl font-bold">
+      Let's <span className="text-orange-400">Talk</span>
+    </h2>
+
+    <p className="text-gray-400 mt-4">
+      Have a project in mind or want to collaborate?
+      Feel free to reach out.
+    </p>
+
+  </div>
+
+  {/* Main Content */}
+  <div className="grid md:grid-cols-2 gap-16 items-start">
+
+    {/* LEFT SIDE */}
+    <div>
+
+      <h3 className="text-3xl font-semibold mb-6">
+        Get In Touch
+      </h3>
+
+      <p className="text-gray-400 leading-8 text-lg">
+        I'm always open to discussing new projects,
+        freelance opportunities, or collaborations.
+      </p>
+
+      <div className="mt-10 space-y-6">
+
+        <div className="bg-gray-900 p-5 rounded-xl">
+          <h4 className="text-orange-400 font-semibold mb-2">
+            Email
+          </h4>
+
+          <p className="text-gray-300">
+            birundugloria@gmail.com
+          </p>
+        </div>
+
+        <div className="bg-gray-900 p-5 rounded-xl">
+          <h4 className="text-orange-400 font-semibold mb-2">
+            Location
+          </h4>
+
+          <p className="text-gray-300">
+            Nairobi, Kenya
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    {/* RIGHT SIDE - CONTACT FORM */}
+    <form className="bg-gray-900 p-8 rounded-2xl space-y-6">
+
+      <div>
+
+        <label className="block mb-2 text-gray-300">
+          Full Name
+        </label>
+
+        <input
+          type="text"
+          placeholder="Enter your name"
+          className="w-full bg-black border border-gray-700 rounded-xl px-5 py-4 text-white outline-none focus:border-orange-400"
+        />
+
+      </div>
+
+      <div>
+
+        <label className="block mb-2 text-gray-300">
+          Email Address
+        </label>
+
+        <input
+          type="email"
+          placeholder="Enter your email"
+          className="w-full bg-black border border-gray-700 rounded-xl px-5 py-4 text-white outline-none focus:border-orange-400"
+        />
+
+      </div>
+
+      <div>
+
+        <label className="block mb-2 text-gray-300">
+          Message
+        </label>
+
+        <textarea
+          rows="6"
+          placeholder="Write your message..."
+          className="w-full bg-black border border-gray-700 rounded-xl px-5 py-4 text-white outline-none focus:border-orange-400"
+        ></textarea>
+
+      </div>
+
+      <button
+        type="submit"
+        className="bg-orange-400 hover:bg-orange-500 text-white px-8 py-4 rounded-xl transition duration-300 hover:scale-105"
+      >
+        Send Message
+      </button>
+
+    </form>
+
+  </div>
 
 </section>
 
