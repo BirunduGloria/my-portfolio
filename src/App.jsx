@@ -444,66 +444,31 @@ function App() {
 {/* Contact Section */}
 <section
   id="contact"
-  className="max-w-7xl mx-auto px-6 py-24"
+  className="max-w-5xl mx-auto px-6 py-24 text-center"
 >
 
   {/* Heading */}
-  <div className="text-center mb-16">
+  <h2 className="text-5xl font-bold">
+    Let's <span className="text-orange-400">Talk</span>
+  </h2>
 
-    <h2 className="text-5xl font-bold">
-      Let's <span className="text-orange-400">Talk</span>
-    </h2>
+  <p className="text-gray-400 mt-6 text-lg">
+    Have a project in mind or want to collaborate?
+    Feel free to reach out.
+  </p>
 
-    <p className="text-gray-400 mt-4">
-      Have a project in mind or want to collaborate?
-      Feel free to reach out.
-    </p>
+  {/* Contact Button */}
+  <button
+    onClick={() => setShowForm(!showForm)}
+    className="mt-10 bg-orange-400 hover:bg-orange-500 text-white px-8 py-4 rounded-xl transition duration-300 hover:scale-105"
+  >
+    {showForm ? "Hide Form" : "Send Message"}
+  </button>
 
-  </div>
+  {/* Hidden Form */}
+  {showForm && (
 
-  {/* Main Content */}
-  <div className="grid md:grid-cols-2 gap-16 items-start">
-
-    {/* LEFT SIDE */}
-    <div>
-
-      <h3 className="text-3xl font-semibold mb-6">
-        Get In Touch
-      </h3>
-
-      <p className="text-gray-400 leading-8 text-lg">
-        I'm always open to discussing new projects,
-        freelance opportunities, or collaborations.
-      </p>
-
-      <div className="mt-10 space-y-6">
-
-        <div className="bg-gray-900 p-5 rounded-xl">
-          <h4 className="text-orange-400 font-semibold mb-2">
-            Email
-          </h4>
-
-          <p className="text-gray-300">
-            birundugloria@gmail.com
-          </p>
-        </div>
-
-        <div className="bg-gray-900 p-5 rounded-xl">
-          <h4 className="text-orange-400 font-semibold mb-2">
-            Location
-          </h4>
-
-          <p className="text-gray-300">
-            Nairobi, Kenya
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-
-    {/* RIGHT SIDE - CONTACT FORM */}
-    <form className="bg-gray-900 p-8 rounded-2xl space-y-6">
+    <form className="bg-gray-900 p-8 rounded-2xl space-y-6 mt-12 text-left">
 
       <div>
 
@@ -551,12 +516,12 @@ function App() {
         type="submit"
         className="bg-orange-400 hover:bg-orange-500 text-white px-8 py-4 rounded-xl transition duration-300 hover:scale-105"
       >
-        Send Message
+        Send
       </button>
 
     </form>
 
-  </div>
+  )}
 
 </section>
 
