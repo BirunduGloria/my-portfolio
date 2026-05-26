@@ -74,7 +74,7 @@ function App() {
 
     {/* Button */}
     <button className="mt-8 bg-orange-400 hover:bg-orange-500 text-white px-6 py-3 rounded-lg transition duration-300 hover:scale-105">
-      View My Projects
+      Get in Touch 
     </button>
 
     {/* Social Links */}
@@ -408,7 +408,14 @@ function App() {
 
 </section>
 
- </div>
+{/* Footer */}
+<footer className="bg-gray-950 border-t border-gray-800 mt-24">
+  <div className="border-t border-gray-800 py-4 text-center text-gray-500 text-sm">
+
+    © 2026 Gloria Birundu. All rights reserved.
+  </div>
+</footer>
+</div>
   )
 }
 
