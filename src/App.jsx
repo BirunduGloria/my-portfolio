@@ -91,10 +91,12 @@ function App() {
       and bring ideas to life on the web.
     </p>
 
-    {/* Button */}
-    <button className="mt-8 bg-orange-400 hover:bg-orange-500 text-white px-6 py-3 rounded-lg transition duration-300 hover:scale-105">
-      Get in Touch 
-    </button>
+    <a
+  href="#contact"
+  className="mt-8 inline-block bg-orange-400 hover:bg-orange-500 text-white px-6 py-3 rounded-lg transition duration-300 hover:scale-105"
+>
+  Get In Touch
+</a>
 
     {/* Social Links */}
     <div className="flex gap-6 mt-8 text-3xl justify-center md:justify-start">
@@ -433,6 +435,20 @@ function App() {
   </button>
 
 </div>
+</section>
+{/* Contact Section */}
+<section
+  id="contact"
+  className="max-w-6xl mx-auto px-6 py-24"
+>
+
+  <h2 className="text-5xl font-bold text-center">
+    Let's <span className="text-orange-400">Talk</span>
+  </h2>
+
+  <p className="text-gray-400 text-center mt-4">
+    Have a project in mind or want to collaborate?
+  </p>
 
 </section>
 
