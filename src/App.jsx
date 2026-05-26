@@ -26,30 +26,49 @@ function App() {
   return (
     <div className="bg-black text-white min-h-screen">
 
-      {/* Navbar */}
       <nav className="flex justify-between items-center px-10 py-5">
 
-        <h1 className="text-2xl font-bold text-orange-400">
-          Gloria
-        </h1>
+  {/* Logo */}
+  <h1 className="text-2xl font-bold text-orange-400">
+    Gloria
+  </h1>
 
-        <ul className="flex gap-6 text-lg">
+  {/* Nav Links */}
+  <div className="flex items-center gap-8">
 
-          <li>
-            <a href="#" className="hover:text-orange-400">
-              Home
-            </a>
-          </li>
+    <ul className="flex gap-6 text-lg">
 
-          <li>
-            <a href="#" className="hover:text-orange-400">
-              Contact
-            </a>
-          </li>
+      <li>
+        <a href="#" className="hover:text-orange-400">
+          Home
+        </a>
+      </li>
 
-        </ul>
+      <li>
+        <a href="#about" className="hover:text-orange-400">
+          About
+        </a>
+      </li>
 
-      </nav>
+      <li>
+        <a href="#services" className="hover:text-orange-400">
+          Services
+        </a>
+      </li>
+
+    </ul>
+
+    {/* Let's Talk Button */}
+    <a
+      href="#contact"
+      className="bg-orange-400 hover:bg-orange-500 text-white px-5 py-2 rounded-lg transition duration-300 hover:scale-105"
+    >
+      Let's Talk
+    </a>
+
+  </div>
+
+</nav>
 
   {/* Hero Section */}
 <div className="flex flex-col-reverse md:flex-row items-center justify-between max-w-6xl mx-auto mt-20 px-5 gap-16">
